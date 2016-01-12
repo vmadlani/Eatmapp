@@ -12,4 +12,31 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
+
+.sticky {
+	position: relative;
+	float: left;
+	top: 0; }
+
+footer {
+	height: 6rem;
+	background: #333;
+	color: #fff; }
+
+
+ .log-in-form {
+ 	border: 1px solid #cacaca;
+ 	padding: 1rem;
+ 	border-radius: 3px; }
+
+#map {
+ 	height: 50%;
+ 	width: 50%;
+ }
+
+
+
+

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @outlet2.address %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @outlet2.latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @outlet2.longitude %>
+</p>
+
+<h3> Nearby </h3>
+
+<ul>
+<% for outlet2 in @outlet2.nearbys(50) %>
+	<li> <%= link_to outlet2.address, outlet2 %> (<%= outlet2.distance.round(2) %> miles)</li>
+<% end %>
+</ul>
+
+
+
+<%= link_to 'Edit', edit_outlet2_path(@outlet2) %> |
+<%= link_to 'Back', outlet2s_path %>
+
+
+
+
+
+
+

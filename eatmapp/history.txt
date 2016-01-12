@@ -1,0 +1,1822 @@
+    1  rvm implode
+    2  brew install ruby-build rbenv
+    3  echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
+    4  echo 'export PATH=$HOME/.rbenv/shims:$PATH' >> ~/.zshrc
+    5  rbenv -v
+    6  rbenv install 2.2.3
+    7  rbenv rehash
+    8  rbenv global 2.2.3
+    9  ruby -v
+   10  curl https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
+   11  source ~/.bash_profile
+   12  source ~/.zshrc
+   13  nvm ls-remote
+   14  nvm install v5.1.0
+   15  node --version
+   16  echo 'gem: --no-rdoc --no-ri' >> ~/.gemrc
+   17  gem install bundler
+   18  rbenv rehash
+   19  brew install wget
+   20  subl ~/.zshrc
+   21  source ~/.zshrc
+   22  brew install git
+   23  which git
+   24  git --version
+   25  git config --global user.name "vmadlani"
+   26  git config --global user.email "vivek.madlani@gmail.com"
+   27  echo .DS_Store >> ~/.gitignore_global
+   28  git config --global core.excludesfile ~/.gitignore_global
+   29  echo "/public/uploads/\nnode_modules/\nbower_components/" >> ~/.gitignore_global
+   30  ls -al ~/.ssh
+   31  ssh-keygen -t rsa -C "vivek.madlani@gmail.com"
+   32  ssh-add ~/.ssh/id_rsa
+   33  pbcopy < ~/.ssh/id_rsa.pub
+   34  ssh -T git@github.com
+   35  pwd
+   36  git clone git@github.com:vmadlani/WDI_LDN_17_LESSON_NOTES.git
+   37  ls
+   38  cd WDI_LDN_17_LESSON_NOTES
+   39  git pull upstream master
+   40  git remote add upstream git@github.com:ga-students/WDI_LDN_17_LESSON_NOTES.git
+   41  git pull upstream master
+   42  cd ..
+   43  git clone git@github.com:vmadlani/WDI_LDN_17_HOMEWORK.git
+   44  ls
+   45  git clone git@github.com:vmadlani/WDI_LDN_17_CLASSWORK.git
+   46  ls
+   47  pwd
+   48  ls
+   49  cd development
+   50  ls
+   51  cd WDI_LDN_17_CLASSWORK
+   52  ls
+   53  cd ..
+   54  cd WDI_LDN_17_HOMEWORK
+   55  ls
+   56  pwd
+   57  cd ..
+   58  ls
+   59  cd WDI_LDN_17_HOMEWORK
+   60  cd 
+   61  cd WDI_LDN_17_HOMEWORK
+   62  ls
+   63  cd vivek
+   64  ls
+   65  cd w01d04
+   66  subl .
+   67  ls
+   68  git add
+   69  pwd
+   70  git status
+   71  git init
+   72  git status
+   73  git add
+   74  git add .
+   75  git commit -m "calculator with css"
+   76  git push origin master
+   77  git push
+   78  cd development
+   79  git add
+   80  git init
+   81  ls
+   82  cd WDI_LDN_17_HOMEWORK
+   83  git status
+   84  git add
+   85  git add .
+   86  git commit -m "only just moved folders"
+   87  git push origin master
+   88  cd ..
+   89  ls
+   90  cd WDI_LDN_17_CLASSWORK
+   91  ls
+   92  mkdir w01d05
+   93  ls
+   94  cd w01d05
+   95  mkdir plugin
+   96  cd plugin
+   97  touch index.html
+   98  mkdir js
+   99  touch js/plugin.js
+  100  subl .
+  101  cd ..
+  102  cd WDI_LDN_17_HOMEWORK
+  103  ls
+  104  cd vivek
+  105  ls
+  106  mkdir w01d05
+  107  cd w01d05
+  108  touch TTT.html
+  109  mkdir js
+  110  touch js/TTT.js
+  111  mkdir css
+  112  touch css/TTT.css
+  113  subl .
+  114  cd ..
+  115  cd .
+  116  cd ..
+  117  WDI_LDN_17_LESSON_NOTES
+  118  git pull upstream master
+  119  cd ..
+  120  cd WDI_LDN_17_HOMEWORK
+  121  git add
+  122  git add .
+  123  git status
+  124  git commit -m "html done, jss for clicks to show X & O done, clear button done, need to build win function"
+  125  git add.
+  126  git add .
+  127  cd development
+  128  cd WDI_LDN_17_HOMEWORK
+  129  cd vivek
+  130  cd w01d05
+  131  ls
+  132  git add .
+  133  git status
+  134  git commit -m "done with bonus"
+  135  git status
+  136  git add .
+  137  git commit -m "done - checked and the tie function now works"
+  138  git status
+  139  git push origin master
+  140  cd ..
+  141  cd WDI_LDN_17_CLASSWORK
+  142  ls
+  143  mkdir w02d01
+  144  cd w02
+  145  cd w02d01
+  146  mkdir objects
+  147  cd objects
+  148  touch index.html
+  149  mkdir js
+  150  touch js/index.js
+  151  subl .
+  152  cd ..
+  153  mkdir soundmanager
+  154  cd soundmanager
+  155  touch index.html
+  156  mkdir js
+  157  touch js/music.js
+  158  mkdir css
+  159  touch css/music.css
+  160  mkdir sounds
+  161  subl .
+  162  cd ..
+  163  WDI_LDN_17_HOMEWORK
+  164  ls
+  165  cd vivek
+  166  ls
+  167  mkdir w02d01
+  168  cd w02d01
+  169  touch index.html
+  170  mkdir js
+  171  touch js/index.js
+  172  subl .
+  173  mkdir css
+  174  touch css/index.css
+  175  cd ..
+  176  cd development
+  177  ls
+  178  cd WDI_LDN_17_CLASSWORK
+  179  cd ..
+  180  cd WDI_LDN_17_CLASSWORK
+  181  git status
+  182  git add .
+  183  git commit -m "committing classwork so far"
+  184  git push
+  185  cd ..
+  186  cd WDI_LDN_17_LESSON_NOTES
+  187  l
+  188  c d..
+  189  cd..
+  190  cd ..
+  191  cd WDI_LDN_17_HOMEWORK
+  192  l
+  193  cd ..
+  194  cd WDI_LDN_17_HOMEWORK/vivek
+  195  ls
+  196  l
+  197  cd w01d02
+  198  l
+  199  cd ..
+  200  cd w01d03
+  201  l
+  202  ls -a
+  203  cd ..
+  204  cd w01d04
+  205  l
+  206  rm -rf .git
+  207  ls
+  208  l
+  209  cd ..
+  210  cd w01d05
+  211  l
+  212  cd ..
+  213  cd w02d01
+  214  l
+  215  cd ..
+  216  l
+  217  cd ..
+  218  pwd
+  219  cd development/
+  220  git clone git@github.com:vmadlani/WDI_LDN_17_HOMEWORK.git
+  221  git status
+  222  l
+  223  rm -rf .git
+  224  cd WDI_LDN_17_HOMEWORK
+  225  l
+  226  git status
+  227  cd ..
+  228  cd WDI_LDN_17_
+  229  cd WDI_LDN_17_HOMEWORK
+  230  git status
+  231  touch test.html
+  232  git status
+  233  git add .
+  234  git commit -m "test push commit"
+  235  git push
+  236  ls
+  237  rm test.html
+  238  ls
+  239  git add .
+  240  git status
+  241  git commit -m "deleted test file"
+  242  git push
+  243  cd ..
+  244  cd WDI_LDN_17_CLASSWORK
+  245  l
+  246  cd w01d05
+  247  l
+  248  cd ..
+  249  cd w02d01
+  250  l
+  251  cd ..
+  252  git status
+  253  cd ..
+  254  cd WDI_LDN_17_LESSON_NOTES
+  255  ls
+  256  l
+  257  cd w01d01
+  258  l
+  259  cd ..
+  260  cd w01d02
+  261  l
+  262  cd .,
+  263  cd ..
+  264  cd w01d03
+  265  l
+  266  cd ..
+  267  cd w01d04
+  268  l
+  269  cd ..
+  270  cd w01d05
+  271  l
+  272  cd ..
+  273  cd WDI_LDN_17_CLASSWORK
+  274  ls
+  275  cd w02d01
+  276  l
+  277  ls
+  278  pwd
+  279  ls
+  280  cd ..
+  281  ls
+  282  cd WDI_LDN_17_CLASSWORK
+  283  cd ..
+  284  cd WDI_LDN_17_HOMEWORK
+  285  cd ..
+  286  WDI_LDN_17_HOMEWORK/cd ..
+  287  WDI_LDN_17_LESSON_NOTES/git pull origin master
+  288  cd ..
+  289  cd development
+  290  cd WDI_LDN_17_LESSON_NOTES
+  291  git pull upstream master
+  292  cd ..
+  293  WDI_LDN_17_HOMEWORK
+  294  ls
+  295  cd vivek
+  296  w02d01
+  297  ls
+  298  git add .
+  299  git status
+  300  git commit -m "finished it. keep on trying to make it m ore DRY"
+  301  git push origin master
+  302  cd ..
+  303  WDI_LDN_17_CLASSWORK
+  304  ls
+  305  mkdir w02d02
+  306  cd w02d02
+  307  mkdir this
+  308  cd this
+  309  touch index.html
+  310  subl .
+  311  touch alert.html
+  312  cd ..
+  313  mkdir callbacks
+  314  cd callbacks
+  315  touch index.html
+  316  subl .
+  317  touch index2.html
+  318  d ..
+  319  cd ..
+  320  WDI_LDN_17_HOMEWORK
+  321  ls
+  322  cd vivek
+  323  ls
+  324  cd w0
+  325  1
+  326  cd w01d05
+  327  cd vivkve
+  328  cd vivek
+  329  cd w01d05
+  330  ls
+  331  subl .
+  332  cd ..
+  333  cd WDI_LDN_17_LESSON_NOTES
+  334  git pull upstream master
+  335  ls
+  336  cd ..
+  337  WDI_LDN_17_HOMEWORK
+  338  ls
+  339  cd vivek
+  340  ls
+  341  cd w02d02
+  342  ls
+  343  git add
+  344  git add .
+  345  git status
+  346  git commit -m "TTT with objects done"
+  347  git add .
+  348  git status
+  349  git commit -m "TTT with objects done"
+  350  git status
+  351  git add .
+  352  git status
+  353  git commit -m "TTT with objects done"
+  354  git push
+  355  cd ..
+  356  cd development
+  357  cd ..
+  358  WDI_LDN_17_CLASSWORK
+  359  mkdir w02d03
+  360  cd w02d03
+  361  mkdir jquery
+  362  cd jquery
+  363  touch index.html
+  364  subl .
+  365  mkdir js
+  366  touch js/index.js
+  367  touch js/index2.js
+  368  cd ..
+  369  mkdir calculator_jq
+  370  cd calculator_jq
+  371  touch index.html
+  372  mkdir css
+  373  mkdir js
+  374  touch js/index.js
+  375  touch css/calcjQ.css
+  376  touch js/calcjQ.js
+  377  touch calcjQ.html
+  378  subl .
+  379  cd ..
+  380  WDI_LDN_17_HOMEWORK
+  381  cd vivek
+  382  ls
+  383  mkdir w02d03
+  384  cd w02d03
+  385  ls
+  386  subl .
+  387  git add
+  388  git add .
+  389  got status
+  390  git status
+  391  git commit -m "content being added - now need to work on formatting"
+  392  cd development
+  393  cd WDI_LDN_17_HOMEWORK
+  394  cd vivek
+  395  cd w02d03
+  396  ls
+  397  git status
+  398  git add .
+  399  git commit -m "need to work out formatting"
+  400  git push origin master
+  401  git status
+  402  ls
+  403  cd js
+  404  ls
+  405  ping www.google.com
+  406  cd development
+  407  git pwd
+  408  pwd
+  409  git clone git@github.com:vmadlani/vmadlani.github.io.git
+  410  cd vmadlani.github.io
+  411  ls
+  412  touch index.html
+  413  git add .
+  414  git commit -m "adding index file to github page repo"
+  415  git push 
+  416  subl .
+  417  git add
+  418  git add .
+  419  git commit -m "put something in index.html"
+  420  git push
+  421  mkdir project1
+  422  cd project1
+  423  touch index.html
+  424  git add .
+  425  git commit -m "intial commit for sub directory project1 index.html"
+  426  git push
+  427  subl .
+  428  git add .
+  429  git commit -m "second commit for sub directory project1 index.html"
+  430  git push
+  431  cd ..
+  432  mkdir responsive
+  433  cd responsive
+  434  touch index.html
+  435  mkdir css
+  436  touch css/index.css
+  437  subl .
+  438  git add .
+  439  git status
+  440  git commit -m "added responsive styles"
+  441  git push
+  442  git add .
+  443  git commit -m "added meta"
+  444  git push
+  445  git add .
+  446  git commit -m "added meta"
+  447  git push
+  448  cd ..
+  449  WDI_LDN_17_CLASSWORK
+  450  mkdir w02d04
+  451  cd w02d04
+  452  ls
+  453  touch index.html
+  454  mkdir js
+  455  touch js/index.js
+  456  subl .
+  457  cd ..
+  458  cd w02d04
+  459  ls
+  460  mkdir problems
+  461  mv index.html problems/index.html
+  462  mv js/index.jss problems/js/index.js
+  463  cd problems
+  464  mkdir js
+  465  mv js/index.jss problems/js/index.js
+  466  ls
+  467  subl .
+  468  mv js/index.jss problems/js/index.js
+  469  cd js
+  470  touch index.js
+  471  cd ..
+  472  touch index2.html
+  473  touch js/index2.js
+  474  subl .
+  475  touch index3.html
+  476  touch js/index3.js
+  477  cd ..
+  478  mkdir PROJECT1
+  479  cd PROJECT1
+  480  mkdir js
+  481  mkdir css
+  482  touch gameBoard.html
+  483  touch js/gameBoard.js
+  484  touch css/gameBoard.css
+  485  subl .
+  486  touch jQueryUItest.html
+  487  cd ..
+  488  git clone git@github.com:vmadlani/Project_1.git
+  489  cd Project_1
+  490  subl .
+  491  git add .
+  492  git status
+  493  git commit -m "first commit, basic gameBoard"
+  494  git log
+  495  cd development
+  496  cd Project_1/
+  497  ls
+  498  touch jQueryUItest2
+  499  touch jQueryUItest2.html
+  500  rm jQueryUItest2
+  501  git add .
+  502  git status
+  503  git add .
+  504  git status
+  505  git commit -m "template for gameboard "
+  506  git push
+  507  git add .
+  508  git commit -m "template for gameboard works for wrong drags "
+  509  git add .
+  510  git push
+  511  git add .
+  512  git commit -m "added Player 2 "
+  513  git push
+  514  git add .
+  515  git commit -m "added displayBoard"
+  516  git push
+  517  ls
+  518  mkdir test
+  519  mv jQueryUItest.html test/jQueryUItest2.html
+  520  ls
+  521  mv jQueryUItest2.html test/jQueryUItest.html
+  522  ls
+  523  cd test
+  524  ls
+  525  touch test.html
+  526  touch text.js
+  527  mv text.js test.js
+  528  ls
+  529  cd ..
+  530  git add .
+  531  git commit -m "added random choice generator"
+  532  git push
+  533  cd ..
+  534  cd WDI_LDN_17_LESSON_NOTES
+  535  git pull
+  536  ls
+  537  cd completed_examples
+  538  ls
+  539  w02d01
+  540  ls
+  541  cd ..
+  542  git pull origin master
+  543  ls
+  544  cd completed_examples
+  545  ls
+  546  cd ..
+  547  cd Project_1
+  548  ls
+  549  git add .
+  550  git status
+  551  git commit -m "with first draft css..."
+  552  git push
+  553  cd ..
+  554  cd WDI_LDN_17_LESSON_NOTES
+  555  ls
+  556  cd w01d02
+  557  ls
+  558  cd ..
+  559  Project_1
+  560  git add .
+  561  git status
+  562  git commit -m "more styling + lives"
+  563  cd ..
+  564  ls
+  565  cs vmadlani.github.io
+  566  cd vmadlani.github.io
+  567  git add .
+  568  git commit -m "project 1..."
+  569  git push
+  570  cd ..
+  571  cd Project_1
+  572  ls
+  573  cd js
+  574  mkdir sounds
+  575  cs vmacd ..
+  576  cd .
+  577  cd ..
+  578  cd vmadlani.github.io
+  579  ls
+  580  git status
+  581  git add .
+  582  git commit -m "project 1..with sounds"
+  583  git push
+  584  git push origin master
+  585  open .
+  586  git status
+  587  cd ..
+  588  cd WDI_LDN_17_CLASSWORK
+  589  ls
+  590  mkdir w03d04
+  591  pwd
+  592  cd w03d04
+  593  ls
+  594  mkdir ruby
+  595  cd ruby
+  596  irb
+  597  touch example.rb
+  598  subl .
+  599  example.rb
+  600  ruby example.rb
+  601  example.rb
+  602  ruby example.rb
+  603  touch control_flow.rb
+  604  ruby control_flow.rb
+  605  ruby example.rb
+  606  ruby control_flow.rb
+  607  irb
+  608  cd development
+  609  cd WDI_LDN_17_CLASSWORK
+  610  cd w03d04/ruby
+  611  ruby control_flow.rb
+  612  irb
+  613  ruby control_flow.rb
+  614  mkdir LAB_ruby_calc
+  615  cd LAB_ruby_calc
+  616  touch addition.rb
+  617  ls
+  618  subl .
+  619  ruby addition.rb
+  620  ls
+  621  touch subtraction.rb
+  622  touch multiplication.rb
+  623  touch division.rb
+  624  touch squareroot.rb
+  625  touch power.rb
+  626  touch centigrade_to_farenheight.rb
+  627  touch bmi.rb
+  628  subl.
+  629  subl .
+  630  ruby squareroot.rb
+  631  ruby power.rb
+  632  ruby centigrade_to_farenheight.rb
+  633  ruby bmi.rb
+  634  ruby squareroot.rb
+  635  ruby centigrade_to_farenheight.rb
+  636  cd ..
+  637  mkdir arrays
+  638  cd arrays
+  639  touch arrays.rb
+  640  subl .
+  641  ruby arrays.rb
+  642  cd development
+  643  cd WDI_LDN_17_CLASSWORK
+  644  cd w03d04
+  645  ls
+  646  cd ruby
+  647  cd arrays
+  648  ls
+  649  ruby arrays.rb
+  650  cd developement
+  651  ls
+  652  cd development
+  653  cd WDI_LDN_17_CLASSWORK
+  654  cd w03
+  655  cd w03d04
+  656  cd r
+  657  cd ruby
+  658  cd arr
+  659  cd arrays
+  660  ls
+  661  ruby arrays.rb
+  662  cd arr
+  663  ruby arrays.rb
+  664  cd arr
+  665  ruby arrays.rb
+  666  cd development
+  667  cd WDI_LDN_17_HOMEWORK
+  668  ls
+  669  cd vivek
+  670  ls
+  671  mkdir w03d04
+  672  cd w03d04
+  673  touch MTA.rb
+  674  subl . 
+  675  touch homework.md
+  676  ls
+  677  ruby MTA.rb
+  678  git add .
+  679  git status
+  680  git commit -m "got inputs"
+  681  git push
+  682  ruby MTA.rb
+  683  git status
+  684  ruby MTA.rb
+  685  git add .
+  686  git status
+  687  git commit -m "works"
+  688  git push
+  689  ruby MTA.rb
+  690  cd ..
+  691  WDI_LDN_17_CLASSWORK
+  692  ls
+  693  mkdir w03d05
+  694  cd w03d05
+  695  ls
+  696  irb
+  697  mkdir methods
+  698  cd methods
+  699  touch methods.rb
+  700  subl .
+  701  ruby methods.rb
+  702  cd ..
+  703  mkdir loops
+  704  cd loops
+  705  touch loops.rb
+  706  subl .
+  707  ruby loops.rb
+  708  touch loops.rb
+  709  ruby loops.rb
+  710  cd ..
+  711  ls
+  712  cd methods
+  713  touch custom.rb
+  714  subl .
+  715  touch custom.rb
+  716  ruby custom.rb
+  717  cd ..
+  718  mkdir labs
+  719  cd labs
+  720  touch calc.rb
+  721  subl .
+  722  cd ..
+  723  cd WDI_LDN_17_CLASSWORK
+  724  ls
+  725  cd w03d05
+  726  ls
+  727  cd labs
+  728  ls
+  729  ruby calc.rb
+  730  cd ..
+  731  WDI_LDN_17_HOMEWORK
+  732  ls
+  733  cd vivek
+  734  ls
+  735  mkdir w03d05
+  736  cd w03d05
+  737  ls
+  738  touch bj.rb
+  739  subl .
+  740  touch planning.md
+  741  ruby bj.rb
+  742  e
+  743  ruby calc.rb
+  744  ruby bj.rb
+  745  ruby calc.rb
+  746  ruby bj.rb
+  747  ruby calc.rb
+  748  ruby bj.rb
+  749  ruby calc.rb
+  750  ruby bj.rb
+  751  ruby calc.rb
+  752  ruby bj.rb
+  753  s
+  754  ruby bj.rb
+  755  9
+  756  ruby bj.rb
+  757  cd ..
+  758  WDI_LDN_17_HOMEWORK
+  759  cd vivek
+  760  cd w03d05
+  761  ls
+  762  ruby bj.rb
+  763  cd
+  764  cd development
+  765  WDI_LDN_17_HOMEWORK
+  766  cd vivek
+  767  cd w03d05
+  768  ls
+  769  ruby bj.rb
+  770  cd develop
+  771  cd development
+  772  WDI_LDN_17_HOMEWORK/
+  773  cd vivek
+  774  cd w03d05
+  775  ruby bj.rb
+  776  pwd
+  777  ruby bj.rb
+  778  git add
+  779  git add .
+  780  git commit -m "nearly there"
+  781  git push
+  782  ruby bj.rb
+  783  cd development
+  784  cd WDI_LDN_17_HOMEWORK
+  785  cd vivek
+  786  ls
+  787  cd w03d05
+  788  ls
+  789  ruby bj.rb
+  790  cd development
+  791  cd WDI_LDN_17_HOMEWORK
+  792  cd vivek
+  793  cd w03d05
+  794  ruby bj.rb
+  795  cd w03d05
+  796  ruby bj.rb
+  797  git add .
+  798  git commit -m "works"
+  799  git push
+  800  cd ..
+  801  WDI_LDN_17_CLASSWORK
+  802  ls
+  803  mkdir w04d01
+  804  cd w04d01
+  805  ls
+  806  irb
+  807  mkdir oop
+  808  cd oop
+  809  touch classes.rb
+  810  subl .
+  811  ruby classes.rb
+  812  cd ..
+  813  mkdir oopLAB
+  814  cd oopLAB
+  815  touch class1.rb
+  816  subl .
+  817  ruby class1.rb
+  818  touch class1.rb
+  819  ruby class1.rb
+  820  touch class2.rb
+  821  ruby class2.rb
+  822  touch class3.rb
+  823  ruby class3.rb
+  824  touch class4.rb
+  825  ruby class4.rb
+  826  touch class5.rb
+  827  ruby class4.rb
+  828  cd ..
+  829  mkdir multiple
+  830  cd multiple
+  831  touch airport.rb
+  832  touch flight.rb
+  833  touch passenger.rb
+  834  subl .
+  835  touch main.rb
+  836  ruby main.rb
+  837  1
+  838  ruby main.rb
+  839  cd development
+  840  WDI_LDN_17_CLASSWORK
+  841  cd w04d01
+  842  ls
+  843  cd multiple
+  844  ls
+  845  subl .
+  846  ruby main.rb
+  847  1
+  848  ruby main.rb
+  849  1
+  850  ruby main.rb
+  851  cd ..
+  852  WDI_LDN_17_LESSON_NOTES
+  853  git pull origin master
+  854  git pull
+  855  ls
+  856  git pull origin master
+  857  cd ..
+  858  WDI_LDN_17_CLASSWORK
+  859  ls
+  860  cd ..
+  861  cd WDI_LDN_17_LESSON_NOTES
+  862  ls
+  863  git pull upstream master
+  864  cd ..
+  865  cd WDI_LDN_17_HOMEWORK
+  866  ls
+  867  cd vivek
+  868  ls
+  869  mkdir wo4d01
+  870  mkdir w04d01
+  871  cd w04d01
+  872  touch main.rb
+  873  touch shelter.rb
+  874  touch pets.rb
+  875  touch client.rb
+  876  subl .
+  877  git add .
+  878  git status
+  879  git commit -m "file structure"
+  880  git push
+  881  ruby main.rb
+  882  1
+  883  ruby main.rb
+  884  cd w04d01
+  885  ruby main.rb
+  886  clear
+  887  ruby main.rb
+  888  git add
+  889  git add .
+  890  git commit -m "total disaster"
+  891  git commit -m "stuck on 4,5,6"
+  892  git push
+  893  cd ..
+  894  clear
+  895  cd WDI_LDN_17_CLASSWORK
+  896  mkdir w04d02
+  897  cd w04d02
+  898  mkdir sinatra
+  899  cd sinatra
+  900  cd ..
+  901  mkdir sinatra
+  902  gem install sinatra sinatra-contrib
+  903  cd sinatra
+  904  touch main.rb
+  905  subl .
+  906  ruby main.rb
+  907  mkdir views
+  908  touch views/home.erb
+  909  ruby main.rb
+  910  touch views/account.erb
+  911  ruby main.rb
+  912  cd public
+  913  touch pulic/account.css
+  914  touch public/account.css
+  915  mkdir public
+  916  touch public/account.css
+  917  ruby main.rb
+  918  cd ..
+  919  cd w04d02
+  920  mkdir template
+  921  mkdir templates
+  922  cd templates
+  923  touch main.rb
+  924  mkdir public
+  925  mkdir views
+  926  touch views/layout.erb
+  927  touch public/style.css
+  928  subl .
+  929  ruby main.rb
+  930  touch views/home.erb
+  931  ruby main.rb
+  932  cd ..
+  933  mkdir LAB_sinatra
+  934  cd LAB_sinatra
+  935  mkdir public
+  936  mkdir views
+  937  touch main.rb
+  938  touch views/home.erb
+  939  touch views/about.erb
+  940  touch views/portfolio.erb
+  941  touch views/layout.erb
+  942  touch public/style.css
+  943  subl .
+  944  cd ..
+  945  ls
+  946  cd w04d02
+  947  ls
+  948  cd templates
+  949  ls
+  950  ruby main.rb
+  951  cd ..
+  952  cd WDI_LDN_17_HOMEWORK
+  953  cd vivek
+  954  cd w04d02
+  955  cd templates
+  956  subl .
+  957  ruby main.rb
+  958  git add .
+  959  git status
+  960  git commit -m "done"
+  961  ruby main.rb
+  962  cd ..
+  963  cd templates
+  964  ls
+  965  ruby main.rb
+  966  git add .
+  967  git commit -m "done"
+  968  git commit -m "formatting"
+  969  git push
+  970  cd ..
+  971  WDI_LDN_17_CLASSWORK
+  972  ls
+  973  mkdir w04d03
+  974  cd w04d03
+  975  psql
+  976  cd development
+  977  cd WDI_LDN_17_CLASSWORK
+  978  cd w04d03
+  979  ls
+  980  mkdir SQL
+  981  cd SQL
+  982  ls
+  983  sqlite3 wishlists.db < sql_dump.sql
+  984  sqlite2 wishlists.db
+  985  sqlite3 wishlists.db
+  986  cd development
+  987  cd WDI_LDN_17_HOMEWORK
+  988  cd vivek
+  989  mkdir w04d03
+  990  cd w04d03
+  991  sqlite3 wishlists.db
+  992  cd development
+  993  cd WDI_LDN_17_CLASSWORK
+  994  ls
+  995  w04d03
+  996  ls
+  997  cd sql
+  998  ls
+  999  cd carmen-sandiego
+ 1000  createdb world
+ 1001  psql world -f ./world.sql
+ 1002  psql world
+ 1003  ls
+ 1004  sqlite3 wishlists.db < sql_dump.sql
+ 1005  cd ..
+ 1006  ls
+ 1007  cd SQL
+ 1008  ls
+ 1009  cd SQL LAB
+ 1010  ls
+ 1011  CD SQL LAB
+ 1012  cd LAB
+ 1013  sqlite 3
+ 1014  cd ..
+ 1015  cd w04d03
+ 1016  ls
+ 1017  cd SQL
+ 1018  ls
+ 1019  sqlite3 wishlists.db
+ 1020  cd development
+ 1021  cd WDI_LDN_17_HOMEWORK
+ 1022  cd vivek
+ 1023  cd w04d03
+ 1024  ls
+ 1025  cd carmen-sandiego
+ 1026  subl .
+ 1027  cd development
+ 1028  cd WDI_LDN_17_HOMEWORK
+ 1029  cd vivek
+ 1030  cd w04d03
+ 1031  cd carmen-sandiego
+ 1032  createdb world
+ 1033  cd development
+ 1034  cd WDI_LDN_17_HOMEWORK
+ 1035  cd vivek
+ 1036  cd w04d03
+ 1037  ls
+ 1038  git add .
+ 1039  git commit -m "all done"
+ 1040  git push
+ 1041  cd development
+ 1042  cd WDI_LDN_17_CLASSWORK
+ 1043  cd w04d03
+ 1044  ls
+ 1045  cd sql
+ 1046  ls
+ 1047  sqlite3 wishlists.db < sql_dump.sql
+ 1048  cd ..
+ 1049  cd WDI_LDN_17_LESSON_NOTES
+ 1050  git pull upstream master
+ 1051  cd ..
+ 1052  cd WDI_LDN_17_CLASSWORK
+ 1053  ls
+ 1054  cd w04d04
+ 1055  ls
+ 1056  subl .
+ 1057  cd API_EXAMPLE
+ 1058  gem install httparty
+ 1059  rbenv rehash
+ 1060  createdb movie_app
+ 1061  psql -d movie_app -f movies.sql
+ 1062  ls
+ 1063  cd movies_app
+ 1064  psql -d movie_app -f movies.sql
+ 1065  name = params[:title].gsub(' ','+')
+ 1066  ls
+ 1067  ruby main.rb
+ 1068  gem install pg
+ 1069  ruby main.rb
+ 1070  cd development
+ 1071  WDI_LDN_17_CLASSWORK
+ 1072  ls
+ 1073  cd w04d04
+ 1074  ls
+ 1075  cd api example
+ 1076  cd API_EXAMPLE
+ 1077  ls
+ 1078  cd movies_app
+ 1079  ls
+ 1080  cd ..
+ 1081  psql movie_app
+ 1082  cd ..
+ 1083  cd WDI_LDN_17_CLASSWORK
+ 1084  ls
+ 1085  cd w04d04
+ 1086  l
+ 1087  sls
+ 1088  ls
+ 1089  cd starter-code\ 2
+ 1090  subl .
+ 1091  bundle install
+ 1092  bundle update
+ 1093  bundle install
+ 1094  mkdir config
+ 1095  touch config/database.yml
+ 1096  touch models/artist.rb
+ 1097  rake db:create
+ 1098  psql
+ 1099  rackup
+ 1100  clear
+ 1101  rake db:create_migration NAME=create_artists.rb
+ 1102  rake db:create_migration NAME=create_artists
+ 1103  rake db:migrate
+ 1104  psql
+ 1105  rackup
+ 1106  cd ..
+ 1107  cd WDI_LDN_17_HOMEWORK
+ 1108  ls
+ 1109  cd vivek
+ 1110  xs ..
+ 1111  cd ..
+ 1112  WDI_LDN_17_CLASSWORK
+ 1113  cd ..
+ 1114  cd WDI_LDN_17_LESSON_NOTES
+ 1115  git pull upstream master
+ 1116  cd ..
+ 1117  ls
+ 1118  cd WDI_LDN_17_LESSON_NOTES
+ 1119  git pull upstream master
+ 1120  git pull origin master
+ 1121  cd ..
+ 1122  cd WDI_LDN_17_CLASSWORK
+ 1123  ls
+ 1124  mkdir w04d05
+ 1125  cd w04d05
+ 1126  cd development
+ 1127  ls
+ 1128  cd WDI_LDN_17_LESSON_NOTES
+ 1129  git pull upsteam master
+ 1130  git pull upstream master
+ 1131  ls
+ 1132  cd completed_examples
+ 1133  ls
+ 1134  cd w04d05
+ 1135  ls
+ 1136  cd gregs
+ 1137  ls
+ 1138  ruby main.rb
+ 1139  rake db:create
+ 1140  rackup
+ 1141  cd ..
+ 1142  cd w04d04
+ 1143  ls
+ 1144  cd crud-routes-solution
+ 1145  ls
+ 1146  subl .
+ 1147  cd ..
+ 1148  cd w04d05
+ 1149  cd ..
+ 1150  cd w04d05
+ 1151  ls
+ 1152  createdb gregs
+ 1153  psql -d gregs -f database.sql
+ 1154  cd gregs
+ 1155  psql -d gregs -f database.sql
+ 1156  ruby main.rb
+ 1157  cd ..
+ 1158  cd OLD__WDI_LDN_17_HOMEWORK
+ 1159  cd homework
+ 1160  ls
+ 1161  cd to_do_list
+ 1162  subl .
+ 1163  createdb to_do
+ 1164  psql -d to_do -f database.sql
+ 1165  ruby main.rb
+ 1166  psql -d to_do -f database.sql
+ 1167  createdb to_do_list
+ 1168  psql -d to_do_list -f database.sql
+ 1169  ruby main.rb
+ 1170  cd development
+ 1171  cd OLD__WDI_LDN_17_HOMEWORK
+ 1172  ls
+ 1173  cd homework
+ 1174  ls
+ 1175  cd to_do_list
+ 1176  ls
+ 1177  cd views
+ 1178  ls
+ 1179  cd lists
+ 1180  ls
+ 1181  touch edit_list.erb
+ 1182  touch new_list_item.erb
+ 1183  cd ..
+ 1184  cd WDI_LDN_17_HOMEWORK
+ 1185  ls
+ 1186  cd vivek
+ 1187  cd w04d05
+ 1188  ls
+ 1189  git add
+ 1190  git add .
+ 1191  git status
+ 1192  git commit -m "finding difficulties adding items into list"
+ 1193  git push 
+ 1194  cd ..
+ 1195  cd WDI_LDN_17_CLASSWORK
+ 1196  cd ..
+ 1197  cd development
+ 1198  cd WDI_LDN_17_LESSON_NOTES
+ 1199  cd completed_examples
+ 1200  cd w04d05
+ 1201  ls
+ 1202  open .
+ 1203  ls
+ 1204  cd ..
+ 1205  cd WDI_LDN_17_CLASSWORK
+ 1206  cd w05d01
+ 1207  ls
+ 1208  subl .
+ 1209  psql -d gregs -f database.sql
+ 1210  cd gregs_active_record
+ 1211  psql -d gregs -f database.sql
+ 1212  touch Gemfile
+ 1213  bundle install
+ 1214  touch config.ru
+ 1215  bundle exec rackup
+ 1216  mkdir models
+ 1217  touch models/Product.rb
+ 1218  bundle exec rackup
+ 1219  psql
+ 1220  psql -d gregs -f database.sql
+ 1221  bundle exec rackup
+ 1222  cd development
+ 1223  cd WDI_LDN_17_CLASSWORK
+ 1224  cd w05d01
+ 1225  ls
+ 1226  cd gregs_active_record
+ 1227  cd ..
+ 1228  gem install rails
+ 1229  rbenv rehash
+ 1230  rails new cookbook -d postgresql
+ 1231  ls
+ 1232  cd cookbook
+ 1233  subl .
+ 1234  rails g controller recipes index show
+ 1235  rails g scaffold recipes title content:text
+ 1236  rake db:create
+ 1237  rake db:migrate
+ 1238  rails server
+ 1239  rails g controller static
+ 1240  rails server
+ 1241  rails g controller static
+ 1242  rails server
+ 1243  rake routes
+ 1244  rails g model ingredient name
+ 1245  rake db:migrate
+ 1246  rails server
+ 1247  rails g scaffold categories
+ 1248  rake db:migrate
+ 1249  rails server
+ 1250  irb
+ 1251  cd ..
+ 1252  rails new view-helpers
+ 1253  ls
+ 1254  cd view-helpers
+ 1255  ls
+ 1256  rails g controller home index
+ 1257  subl .
+ 1258  rails server
+ 1259  cd development
+ 1260  cd WDI_LDN_17_LESSON_NOTES
+ 1261  git pull upstream master
+ 1262  ls
+ 1263  cd w05d01
+ 1264  ls
+ 1265  cd rails-intro-lesson
+ 1266  ls
+ 1267  cd ..
+ 1268  subl .
+ 1269  cd ..
+ 1270  WDI_LDN_17_CLASSWORK
+ 1271  cd w05d01
+ 1272  ls
+ 1273  cd gregs_active_record
+ 1274  subl .
+ 1275  cd ..
+ 1276  cd WDI_LDN_17_HOMEWORK
+ 1277  mkdir w05d01
+ 1278  cd w05d01
+ 1279  ls
+ 1280  mkdir country_app
+ 1281  cd country_app
+ 1282  rails g controller countries index show new create edit update delete
+ 1283  cd ..
+ 1284  ~
+ 1285  cd development
+ 1286  cd WDI_LDN_17_HOMEWORK
+ 1287  cd vivek
+ 1288  cd w05d01
+ 1289  rails new countries -d postgresql
+ 1290  ls
+ 1291  cd countries
+ 1292  subl .
+ 1293  rails g controller countries index show new create edit update delete
+ 1294  rails g model Country name:text flag:string size: integer population: integer language:text currency:text gdp:integer
+ 1295  rake db:create
+ 1296  rake db:migrate
+ 1297  rails server
+ 1298  rake routes
+ 1299  rails server
+ 1300  rake db:seed
+ 1301  rails server
+ 1302  cd ..
+ 1303  git add .
+ 1304  git status
+ 1305  git commit -m "basic version with functionality completed"
+ 1306  git push
+ 1307  rails server
+ 1308  ls
+ 1309  cd countries
+ 1310  rails server
+ 1311  cd ..
+ 1312  git add
+ 1313  git add .
+ 1314  git commit -m "new helper for select"
+ 1315  git push
+ 1316  rails server
+ 1317  cd countries
+ 1318  rails server
+ 1319  cd ..
+ 1320  git add .
+ 1321  git commit -m "new helper for select fixed"
+ 1322  git push
+ 1323  psql
+ 1324  cd development
+ 1325  cd WDI_LDN_17_CLASSWORK
+ 1326  ls
+ 1327  mkdir w05d02
+ 1328  cd w05d02
+ 1329  ls
+ 1330  rails new music -d postgresql
+ 1331  cd music
+ 1332  subl .
+ 1333  rake db:create
+ 1334  rails g scaffold Artist name:string gender:string
+ 1335  rails g scaffold Album name:string
+ 1336  rails g scaffold Genre name:string
+ 1337  rails server
+ 1338  rake db:migrate
+ 1339  rails server
+ 1340  rails g migration AddAlbumToArtist album:belongs_to
+ 1341  rake db:migrate
+ 1342  rails g migration AddArtistToAlbums album:has_many
+ 1343  rails g migration AddArtistToAlbum album:has_many
+ 1344  rake db:migrate
+ 1345  rake db:drop
+ 1346  rake db:create
+ 1347  rake db:migrate
+ 1348  rails g migration AddArtistToAlbum artist_id:integer
+ 1349  rake db:migrate
+ 1350  rails server
+ 1351  rails g migration genreAlbums
+ 1352  rake db:migrate
+ 1353  rails server
+ 1354  rails g migration AddAgeToArtist age:integer
+ 1355  rake db:migrate
+ 1356  psql
+ 1357  rails g migration RemoveAgeFromArtist age:integer
+ 1358  rake db:migrate
+ 1359  psql
+ 1360  rails g migration AddAgeAndNationalityToArtist age:integer nationality:string
+ 1361  rake db:migrate
+ 1362  psql
+ 1363  cd ..
+ 1364  rails new layouts -d postgresql
+ 1365  cd layouts
+ 1366  rails g scaffold Person name:string age:integer
+ 1367  rake db:create
+ 1368  rake db:migrate
+ 1369  subl .
+ 1370  rails g controller Static
+ 1371  rails server
+ 1372  cd ..
+ 1373  rails new fanzine -d postgresql
+ 1374  cd fanzine
+ 1375  rails g controller home
+ 1376  subl .
+ 1377  rails server
+ 1378  rake db:create
+ 1379  rake db:migrate
+ 1380  rails server
+ 1381  rails g controller static
+ 1382  rails server
+ 1383  rake routes
+ 1384  psql
+ 1385  cd ..
+ 1386  ls
+ 1387  rails new validation -d postgresql
+ 1388  cd validation
+ 1389  subl .
+ 1390  rails g model Customer name:string email:string password:string age:integer active:boolean
+ 1391  rake db:create
+ 1392  rake db:migrate
+ 1393  rails server
+ 1394  rails g controller Customers index
+ 1395  rails server
+ 1396  psql
+ 1397  rails server
+ 1398  psql
+ 1399  cd ..
+ 1400  mkdir console
+ 1401  cd console
+ 1402  cd ..
+ 1403  ls
+ 1404  cd validation
+ 1405  rails c
+ 1406  history
+ 1407  history | 'rails'
+ 1408  history | grep 'rails'
+ 1409  history > history.txt
+ 1410  cd ..
+ 1411  cd WDI_LDN_17_HOMEWORK
+ 1412  cd vivek
+ 1413  ls
+ 1414  mkdir w05d02
+ 1415  cd w05d02
+ 1416  rail new ListApp -d postgresql
+ 1417  rails new listApp -d postgresql
+ 1418  cd listApp
+ 1419  subl .
+ 1420  rails g model List name:string
+ 1421  rails g model Item name:string
+ 1422  subl .
+ 1423  rake db:create
+ 1424  rake db:migrate
+ 1425  psql
+ 1426  rails g migration AddListIdToItem list_id:integer
+ 1427  rake db:migrate
+ 1428  rake db:seed
+ 1429  rails c
+ 1430  rails g controller List index create new edit show update destroy
+ 1431  rails g controller Item index create new edit show update destroy
+ 1432  rails server
+ 1433  cd development
+ 1434  cd WDI_LDN_17_LESSON_NOTES
+ 1435  git pull upstream master
+ 1436  cd completed_examples
+ 1437  ls
+ 1438  cd w04d05
+ 1439  ls
+ 1440  cd gregs
+ 1441  cd ..
+ 1442  cd WDI_LDN_17_CLASSWORK
+ 1443  cd w05d02
+ 1444  ls
+ 1445  cd ..
+ 1446  cd w05d01
+ 1447  ls
+ 1448  cd cookbook
+ 1449  ls
+ 1450  cd ..
+ 1451  cd w05d02
+ 1452  ls
+ 1453  cd music
+ 1454  ls
+ 1455  subl .
+ 1456  rake db:seed
+ 1457  rails serve
+ 1458  rails server
+ 1459  cd ..
+ 1460  git add .
+ 1461  git commit -m "got initial functionality working - now need to be able to edit items within lists"
+ 1462  git push
+ 1463  rails server
+ 1464  ls
+ 1465  xs listApp
+ 1466  cd listApp
+ 1467  rails server
+ 1468  cd ..
+ 1469  WDI_LDN_17_LESSON_NOTES
+ 1470  git pull upstream master
+ 1471  cd completed_examples
+ 1472  ls
+ 1473  cd w04d05
+ 1474  ls
+ 1475  cd gregs
+ 1476  subl .
+ 1477  git add
+ 1478  git add .
+ 1479  git commit -m "few additions"
+ 1480  git push
+ 1481  cd ..
+ 1482  cd WDI_LDN_17_CLASSWORK
+ 1483  ls
+ 1484  mkdir w05d03
+ 1485  cd w05d03
+ 1486  rails new strongparams -d postgresql
+ 1487  cd strongparams
+ 1488  rails g model Student name:string description:text
+ 1489  rake db:create
+ 1490  subl
+ 1491  rake db:migrate
+ 1492  rails g controller Students index show edit create delete update new
+ 1493  rake routes
+ 1494  rails s
+ 1495  cd ..
+ 1496  rails new authentication -d postgresql
+ 1497  cd authentication
+ 1498  subl . 
+ 1499  bundle
+ 1500  rbenv rehash
+ 1501  rails g model User email password_digest
+ 1502  rake db:create
+ 1503  rake db:migrate
+ 1504  rails c
+ 1505  rails g controller users index new create
+ 1506  rails s
+ 1507  ls
+ 1508  rails g controller cookies
+ 1509  rails g controller cookies example_1 example_2 example_3
+ 1510  y
+ 1511  rails c
+ 1512  rails s
+ 1513  rails g controller sessions login
+ 1514  rake routes
+ 1515  rails s
+ 1516  rake routes
+ 1517  rails s
+ 1518  rails g controller content page1 page2 page3
+ 1519  rails s
+ 1520  cd ..
+ 1521  rails new flickr -d postresql
+ 1522  rails new flickr -d postgresql
+ 1523  cd flickr
+ 1524  subl .
+ 1525  rails g model User email password_digest
+ 1526  rails g model Photo name url user_id:integer
+ 1527  rake db:create
+ 1528  rake db:migrate
+ 1529  rails c
+ 1530  rake db:seed
+ 1531  rails c
+ 1532  exit
+ 1533  cd development
+ 1534  cd WDI_LDN_17_CLASSWORK
+ 1535  cd w05d03
+ 1536  ls
+ 1537  cd flickr
+ 1538  rails g controller users index new create
+ 1539  rails g controller photos index new create
+ 1540  subl .
+ 1541  rails g controller sessions login
+ 1542  bundle
+ 1543  rbenv rehash
+ 1544  rails g controller sessions new create destroy
+ 1545  rails s
+ 1546  rake routes
+ 1547  rails s
+ 1548  cd development
+ 1549  cd WDI_LDN_17_LESSON_NOTES
+ 1550  git pull upstream master
+ 1551  ls
+ 1552  cd w05d01
+ 1553  ls
+ 1554  cd .
+ 1555  cd ..
+ 1556  cd completed_examples
+ 1557  ls
+ 1558  cd w04d05
+ 1559  ls
+ 1560  cd ..
+ 1561  cd WDI_LDN_17_CLASSWORK
+ 1562  ls
+ 1563  cd w05d02
+ 1564  ls
+ 1565  cd music
+ 1566  subl .
+ 1567  cd layouts
+ 1568  cd ..
+ 1569  cd layouts
+ 1570  ls
+ 1571  subl .
+ 1572  cd ..
+ 1573  cd WDI_LDN_17_LESSON_NOTES
+ 1574  ls
+ 1575  cd completed_examples
+ 1576  ls
+ 1577  git pull upstream master
+ 1578  cd ..
+ 1579  git pull upstream master
+ 1580  ls
+ 1581  cd completed_examples
+ 1582  ls
+ 1583  cd w05d03
+ 1584  ls
+ 1585  subl .
+ 1586  rake routes
+ 1587  rails s
+ 1588  git add .
+ 1589  git commit -m "need to sort out routes, auth etc done"
+ 1590  git push
+ 1591  rails s
+ 1592  git add .
+ 1593  cd ..
+ 1594  cd WDI_LDN_17_HOMEWORK
+ 1595  cd vivek
+ 1596  cd w05d03
+ 1597  ls
+ 1598  cd ..
+ 1599  cd WDI_LDN_17_CLASSWORK
+ 1600  cd w05d03
+ 1601  ls
+ 1602  cd ..
+ 1603  cd WDI_LDN_17_HOMEWORK
+ 1604  ls
+ 1605  cd vivek
+ 1606  cd w05d03
+ 1607  ls
+ 1608  git add .
+ 1609  git commit -m "need help with routes for photos for each user. Maybe nested reources will help"
+ 1610  git push
+ 1611  ls
+ 1612  cd flickr
+ 1613  ls
+ 1614  rails s
+ 1615  rake routes
+ 1616  cd ..
+ 1617  cd WDI_LDN_17_CLASSWORK
+ 1618  ls
+ 1619  mkdir w05d04
+ 1620  ls
+ 1621  cd w05d04
+ 1622  mkdir sass
+ 1623  cd sass
+ 1624  touch app.scss
+ 1625  subl .
+ 1626  gem install sass
+ 1627  sass --watch app.scss:app.css
+ 1628  cd ..
+ 1629  cd General_Assembly
+ 1630  rails new css_frameworks_intro
+ 1631  ls
+ 1632  cd css_frameworks_intro
+ 1633  pwd
+ 1634  rails g scaffold Posts title author content:text
+ 1635  subl .
+ 1636  rake db:create
+ 1637  rake db:migrate
+ 1638  rake db:reset
+ 1639  gem install foundation-rails
+ 1640  rbenv rehash
+ 1641  rails g
+ 1642  bundle
+ 1643  rails g
+ 1644  rails g foundation:install
+ 1645  rail s
+ 1646  rails s
+ 1647  cd .
+ 1648  cd ..
+ 1649  ls
+ 1650  cd listsandtodos
+ 1651  ls
+ 1652  subl .
+ 1653  rails s
+ 1654  rake db:create
+ 1655  rake db:migrate
+ 1656  rails s
+ 1657  bundle
+ 1658  rbenv rehash
+ 1659  rails g foundation:install
+ 1660  rails s
+ 1661  rake db:seed
+ 1662  rails s
+ 1663  touch app.scss
+ 1664  sass --watch app.scss:app.css
+ 1665  rails s
+ 1666  sass --watch app.scss:app.css
+ 1667  rails s
+ 1668  cd ..
+ 1669  mkdir w05d05
+ 1670  cd w05d05
+ 1671  ls
+ 1672  rails new twitter -d postdresql
+ 1673  rails new twitter -d postgresql
+ 1674  cd twitter
+ 1675  subl .
+ 1676  bundle
+ 1677  rbenv rehash
+ 1678  rails g controller twitter index
+ 1679  subl ~/.zshrc
+ 1680  rals s
+ 1681  rails s
+ 1682  rake db:create
+ 1683  rake db:migrate
+ 1684  rails s
+ 1685  ENV
+ 1686  subl ~/.zshrc
+ 1687  rails s
+ 1688  ENV
+ 1689  env
+ 1690  cd development
+ 1691  cd WDI_LDN_17_CLASSWORK
+ 1692  cd w05d05
+ 1693  ls
+ 1694  cd tw
+ 1695  cd twitter
+ 1696  rails s
+ 1697  bundle
+ 1698  rbenv rehash
+ 1699  rails s
+ 1700  bundle
+ 1701  rbenv rehash
+ 1702  rails s
+ 1703  cd development
+ 1704  cd WDI_LDN_17_HOMEWORK
+ 1705  cd ..
+ 1706  cd WDI_LDN_17_LESSON_NOTES
+ 1707  cd completed_examples
+ 1708  ls
+ 1709  cd ..
+ 1710  git pull upstream master
+ 1711  ls
+ 1712  cd completed
+ 1713  cd completed_examples
+ 1714  ls
+ 1715  cd ..
+ 1716  cd completed examples
+ 1717  cd ..
+ 1718  cd WDI_LDN_17_CLASSWORK
+ 1719  ls
+ 1720  cd w05d05
+ 1721  ls
+ 1722  cd listsandtodos-nested-resources
+ 1723  subl .
+ 1724  bundle
+ 1725  rails g devise:install
+ 1726  bundle
+ 1727  rbenv rehash
+ 1728  rails g devise:install
+ 1729  rails s
+ 1730  rake db:create
+ 1731  rake db:migrate
+ 1732  rails s
+ 1733  rails g devise user
+ 1734  rake db:migrate
+ 1735  rails s
+ 1736  cd ..
+ 1737  ls
+ 1738  mkdir Project_2
+ 1739  cd Project_2
+ 1740  rails new eatmapp -d postgresql
+ 1741  git add .
+ 1742  git init
+ 1743  git add .
+ 1744  git commit -m "First commit"
+ 1745  git remote add origin git@github.com:vmadlani/Eatmapp.git
+ 1746  git remote -v
+ 1747  git push origin master
+ 1748  git pull
+ 1749  ls
+ 1750  cd earmapp
+ 1751  cd eatmapp
+ 1752  ls
+ 1753  cd ..
+ 1754  git push origin master
+ 1755  git pull origin master
+ 1756  ls
+ 1757  git push
+ 1758  git push origin master
+ 1759  cd ..
+ 1760  cd WDI_LDN_17_CLASSWORK
+ 1761  ls
+ 1762  mkdir w06d01
+ 1763  cd w06d01
+ 1764  mkdir example
+ 1765  cd example
+ 1766  rails g model User name:string email:string
+ 1767  ls
+ 1768  rails g model User name:string email:string
+ 1769  cd ..
+ 1770  rails new exmaple -d postgresql
+ 1771  cd example
+ 1772  ls
+ 1773  cd ..
+ 1774  ls
+ 1775  cd exmaple
+ 1776  ls
+ 1777  rails g model User name:string email:string
+ 1778  rake db:create
+ 1779  rake db:migrate
+ 1780  subl .
+ 1781  User.create(name: "steve" , email: "steve@steve.com")
+ 1782  User.all
+ 1783  User.create(name: "steve" , email: "steve@steve.com")
+ 1784  rails
+ 1785  User.create(name: "steve" , email: "steve@steve.com")
+ 1786  rails c
+ 1787  rails g model Book name:string
+ 1788  rails g migration AddUserToBooks user_id:integer
+ 1789  rake db:migrate
+ 1790  rails c
+ 1791  ls
+ 1792  rails g model Reader name:string
+ 1793  rake db:migrate
+ 1794  rails c
+ 1795  rails g migration AddReadersToBooks
+ 1796  rails g migration CreateJoinTable books readers
+ 1797  rake db:migrate
+ 1798  psql
+ 1799  rails c
+ 1800  rake db:migrate
+ 1801  rails c
+ 1802  bundle
+ 1803  rails g foundation install
+ 1804  rails g foundation:install
+ 1805  rails g scaffold Post name:string body:text
+ 1806  rails s
+ 1807  rake db:migrate
+ 1808  rails s
+ 1809  cd ..
+ 1810  ls
+ 1811  cd Project_2
+ 1812  l
+ 1813  ls
+ 1814  cd eatmapp
+ 1815  ls
+ 1816  history
+
+
+
+ <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+ async defer></script>
+

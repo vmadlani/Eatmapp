@@ -1,0 +1,27 @@
+Product_Name	Meal	Cal	Veg	LC	HP	Outlet_id
+falafel & houmous pot	snack	305	Y	Y		30
+houmous & raw veg pot	snack	233	Y	Y		30
+mini carrot & houmous pot	snack	128	Y	Y	Y	30
+mini carrot pot	snack	33	Y	Y	Y	30
+mini edamame pot	snack, sides	112	Y	Y	Y	30
+chicken caesar	lunch	260			Y	30
+chicken, bacon & avocado	lunch	230			Y	30
+falafel & houmous	lunch	299	Y		Y	30
+hoi sin duck	lunch	193			Y	30
+tuna crunch	lunch	211			Y	30
+blt artisan	lunch	447			Y	30
+chicken & bacon artisan	lunch	433			Y	30
+egg & rocket artisan	lunch	431	Y		Y	30
+ham & emmental cheese artisan	lunch	438			Y	30
+mature cheddar & chutney artisan	lunch	493	Y		Y	30
+tuna & rocket artisan	lunch	334			Y	30
+tostilocos	lunch	730			Y	30
+dahl malama	lunch	319	Y	Y	Y	30
+penang laksa	lunch	298	Y	Y	Y	30
+ratatouille	lunch	302	Y	Y	Y	30
+piri piri vegetal	lunch	429			Y	30
+spicy mighty meatball	lunch	497			Y	30
+tijuana roll	lunch	468				30
+butternut, lentil & spinach small	lunch	280				30
+chicken broth with rice noodles small	lunch	101				30
+smoky bacon, lentil & savoy cabbage small	lunch	168				30
