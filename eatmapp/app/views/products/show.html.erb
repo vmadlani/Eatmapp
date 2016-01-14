@@ -1,21 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 
-
-
 <%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %> |
+<%= link_to 'Destroy', product_path(@product), method: :delete, data: { confirm: 'Are you sure?' } %>
 
+      <br/>
 
-
-<section id="main-content" class="main-content">
-
-  <div class="row">
-
-    <div class="small-7 medium-8 columns">
-      <h2>I'm not sure I see what you're getting at.</h2>
-      <h4 class="subheader">Do not go gent
-      </h4>
       <p>
         <strong>Name:</strong>
         <%= @product.name %>
@@ -25,62 +16,30 @@
         <strong>Meal:</strong>
         <%= @product.meal %>
       </p>
+      <p>
+        <strong>Calories:</strong>
+        <%= @product.cal %>
+        <strong>Carbs:</strong>
+        <%= @product.carbs %>
+        <strong>Sugar:</strong>
+        <%= @product.sugar %>
+        <strong>Protein:</strong>
+        <%= @product.protein %>
+      </p>
 
       <p>
         <strong>Veg:</strong>
         <%= @product.veg %>
-      </p>
-
-      <p>
         <strong>Lowcarb:</strong>
         <%= @product.lowCarb %>
-      </p>
-
-      <p>
         <strong>Hiprot:</strong>
         <%= @product.hiProt %>
-      </p>
-
-      <p>
-        <strong>Calories:</strong>
-        <%= @product.cal %>
-      </p>
-
-      <p>
-        <strong>User:</strong>
-        <%= @product.user_id %>
-      </p>
-
       <p>
         <strong>Location:</strong>
-        <%= @product.location_id %>
+        <%= @product.locations.all.first.name %>
+        <%= @product.locations.all.first.streetPostcode %>
+      
       </p>
 
 
-<!--     </div>
-
-    <div class="small-3 medium-4 columns">
-
-      <article id="sidebar" class="events-press-cta panel sticky">
-        <p class="lead">What are you going to do with it?</p>
-        <p class="lead">Can't we just let it go? It's not harming anyone.</p>
-        <p>How we can help:
-          <ul>
-            <li>Feature it here!</li>
-            <li>Help promote it.</li>
-            <li>Review material for accuracy.</li>
-            <li>Stickers!</li>
-          </ul>
-
-        </p>
-        <a class="tiny button" href="#">Contact us</a>
-      </article>
-
-    </div>
-
-  </div>
- -->
-
-      
-</section>
 

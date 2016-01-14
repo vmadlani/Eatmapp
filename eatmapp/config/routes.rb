@@ -1,16 +1,16 @@
 Rails.application.routes.draw do
   resources :outlet2s
   resources :outlets
-  resources :locations
-  resources :products
   resources :users
+  resources :products
+  resources :locations
 
-#   resources :users do 
-#     resources :products do
-#   end
-# end
+  # resources :products do
+  #   resources :locations
+  # end  
 
 root "product#index"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

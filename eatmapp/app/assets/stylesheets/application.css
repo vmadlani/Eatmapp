@@ -22,9 +22,11 @@
 	top: 0; }
 
 footer {
-	height: 6rem;
+	height: 2rem;
 	background: #333;
 	color: #fff; }
+
+
 
 
  .log-in-form {
@@ -33,9 +35,23 @@ footer {
  	border-radius: 3px; }
 
 #map {
- 	height: 50%;
- 	width: 50%;
- }
+ 	height: 800px;
+ 	margin-top: 25px;
+
+  }
+
+table {
+	width: 100%;
+	overflow: scroll;
+}
+
+/*colour matcher
+*/
+
+.scroll {
+	height: 400px;
+	overflow: scroll;
+}
 
 
 

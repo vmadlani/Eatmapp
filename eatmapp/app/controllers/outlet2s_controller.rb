@@ -10,7 +10,13 @@ class Outlet2sController < ApplicationController
     else
       @outlet2s = Outlet2.all
     end
-      
+
+    @outlet2s = Outlet2.all
+    @hash = Gmaps4rails.build_markers(@outlet2s) do |outlet2, marker|
+      marker.lat outlet2.latitude
+      marker.lng outlet2.longitude
+    end  
+
   end
 
   # GET /outlet2s/1

@@ -3,104 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <%= include_gon %>
     <%= javascript_include_tag "application" %>
-
-
- <!-- only if you need custom infoboxes -->
-
-    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
-
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
-
     <%= csrf_meta_tags %>
-  </head>
+
+</head>
+
+
+  <%= render "menu" %> 
 
 
 
-  <body>
+  <section id="main-content" class="main-content">
 
 
-
-  </body>
-
- <!--      
-      <div style='width: 800px;'>
-        HELLO
-        <div id="map" style='width: 800px; height: 400px;'></div>
-      </div> -->
-
-</html>
-
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    <style>
-      #map {
-        height: 50%;
-        width: 50%;
-      }
-    </style>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-    async defer></script>
-
-
-
-
-
-
-
-
-
-
-<section id="main-content" class="main-content">
-
-  <div class="row">
-
-    <div class=""large-4 medium-6 small-12 column>
+    <div class="large-4 medium-6 small-12 columns" >
       <%= yield %>
     </div>
-
-    <div class="small-3 medium-4 columns">
-
-
-
-<!--       <article id="sidebar" class="events-press-cta panel sticky">
-        <p class="lead">What are you going to do with it?</p>
-        <p class="lead">Can't we just let it go? It's not harming anyone.</p>
-        <p>How we can help:
-          <ul>
-            <li>Feature it here!</li>
-            <li>Help promote it.</li>
-            <li>Review material for accuracy.</li>
-            <li>Stickers!</li>
-          </ul>
-
-        </p>
-        <a class="tiny button" href="#">Contact us</a>
-      </article> -->
-
+      <div id="map" class="large-8 medium-6 small-12 columns" >
     </div>
-
-  </div>
-
-
       
 </section>
 
-
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+async defer></script>
 
 <footer>
   <p>CONTENT</p>

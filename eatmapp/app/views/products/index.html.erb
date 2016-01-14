@@ -1,52 +1,100 @@
 <p id="notice"><%= notice %></p>
+<h6>Use filters to locate food items around you</h6>
 
-<h1>Listing Products</h1>
+
+
+<%= search_form_for @search do |f| %>
 
 <div class="row">
+  <div class="large-8 columns">
+    <%= f.select :meal_eq, options_for_select([['breakfast, lunch or snack?', ''], ['breakfast'], ['lunch'], ['snack']], :selected => :product_meal) %>
+  </div>
+</div>
 
-<div class="large-4 medium-6 small-12 columns">
+<div class="row">
+  <div class="small-4 columns">
+    <%= f.label :name_cont, "Name contains" %>
+  </div>  
+  <div class="small-8 columns"> 
+<!--<div style="width:50%" > -->
+      <%= f.text_field :name_cont, :placeholder => "eg. berry, tomato, croissant..." %>
+  </div>
+</div>  
 
 
+<div class="row">
+    <%= f.label :cal_gteq, "Calories between" %>
+    <%= f.text_field :cal_gteq %>
+    <%= f.label :cal_lteq, "and" %>
+    <%= f.text_field :cal_lteq %>
+</div>
+
+<div class="row">
+  <div class="small-4 columns">
+    <%= f.label :veg_true, "Vegetarian" %>
+    <%= f.check_box :veg_true %>
+  </div>  
+  <div class="small-4 columns">  
+    <%= f.label :lowCarb_true, "Low Carb" %>
+    <%= f.check_box :lowCarb_true %>
+  </div>  
+  <div class="small-4 columns">  
+    <%= f.label :hiProt_true, "High Protein" %>
+    <%= f.check_box :hiProt_true %>  
+  </div>  
+</div>
+
+
+  <div class="actions"> <%= f.submit "show me food" %>   </div>
+  <div> <%= @products.all.length %> products</div>
+
+<% end %>
+
+
+
+<div class="scroll">
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Meal</th>
-      <th>Veg</th>
-      <th>Lowcarb</th>
-      <th>Hiprot</th>
-      <th>Calories</th>
-<!--       <th>Location</th> -->
-      <th colspan="2"></th>
-    </tr>
+      <th colspan="">Product</th>
+      <th>Diets</th>
+      <th><%= sort_link @search, :cal, "Calories" %></th>
+      <th>from</th>
+      </tr>  
+    <!-- <th>Meal</th> --> 
   </thead>
 
   <tbody>
     <% @products.each do |product| %>
-      <tr>
-        <td><%= link_to product.name, product %></td>
-        <td><%= product.meal %></td>
-        <td><%= product.veg %></td>
-        <td><%= product.lowCarb %></td>
-        <td><%= product.hiProt %></td>
-        <td><%= product.cal %></td>
-<!--         <td><%= product.location_id %></td> -->
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= link_to product.name, product %> (<%= product.category %>)</td>
+      <td> 
+        <% if (product.veg == false) %>
+          <%= '' %>
+        <% else %>
+          <%= 'Veg ' %>
+        <% end %> 
+        <% if (product.lowCarb == false) %>
+          <%= '' %>
+        <% else %>
+          <%= 'LoCarb ' %>
+        <% end %>
+        <% if (product.hiProt == false) %>
+          <%= '' %>
+        <% else %>
+          <%= 'HiProtein ' %>
+        <% end %> </td>
+<!--  <td><%= product.cal %> </td>-->  
+<!--  <td><%= product.lowCarb %></td> -->
+<!--  <td><%= product.hiProt %></td> -->
+      <td> <%=product.cal%></td>
+      <td> <%= product.locations.first.name %> </td> 
+    </tr>
     <% end %>
+
   </tbody>
 </table>
-
 </div>
-
-
-<div class="large-8 medium-6 small-12 columns">
-
-</div>
-
-</div>
-<br>
 
 
 

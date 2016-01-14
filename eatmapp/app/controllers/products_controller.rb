@@ -1,10 +1,53 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
+
+
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+
+    # @your_int = 123
+    # @your_array = [1,2]
+    # @your_hash = {'a' => 1, 'b' => 2}
+    # gon.your_int = @your_int
+    # gon.your_other_int = 345 + gon.your_int
+    # gon.your_array = @your_array
+    # gon.your_array << gon.your_int
+    # gon.your_hash = @your_hash
+
+    # gon.all_variables # > {:your_int => 123, :your_other_int => 468, :your_array => [1, 2, 123], :your_hash => {'a' => 1, 'b' => 2}}
+    # gon.your_array # > [1, 2, 123]
+
+    @search = Product.search(params[:q])
+    @products = @search.result
+    gon.productArray = @products.to_json(:include => :locations)
+    
+    # puts @products.first.locations.first.name
+    # puts @products.first.locations.first.latitude
+    # puts @products.first.locations.first.longitude
+
+
+    $i = 0
+    $num = @products.all.length
+    while $i < $num  do
+
+      puts @products[$i]["name"]
+      puts @products[$i]["cal"]
+      puts @products[$i].locations.first.name
+      puts @products[$i].locations.first.latitude
+      puts @products[$i].locations.first.longitude
+
+      $i +=1
+
+
+    end
+
+    # puts @products
+    # puts @products.first.locations.first.latitude
+
+
+    # @products = Product.all
 
     
   end
@@ -12,6 +55,8 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+
+
   end
 
   # GET /products/new
