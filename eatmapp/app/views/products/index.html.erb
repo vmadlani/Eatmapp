@@ -23,10 +23,14 @@
 
 
 <div class="row">
+  <div class="small-6 columns">
     <%= f.label :cal_gteq, "Calories between" %>
     <%= f.text_field :cal_gteq %>
+  </div>
+  <div class="small-6 columns">
     <%= f.label :cal_lteq, "and" %>
     <%= f.text_field :cal_lteq %>
+  </div>  
 </div>
 
 <div class="row">
@@ -56,19 +60,33 @@
 <table>
   <thead>
     <tr>
-      <th colspan="">Product</th>
-      <th>Diets</th>
-      <th><%= sort_link @search, :cal, "Calories" %></th>
-      <th>from</th>
-      </tr>  
+    <div class="row">
+      <div class="large-6 medium-6 small-6 columns">
+        <th colspan="">Product</th>
+      </div>  
+      <div class="large-4 medium-4 small-4 columns">  
+        <th>Diets</th>
+      </div>
+      <div class="large-2 medium-2 small-2 columns">  
+        <th><%= sort_link @search, :cal, "Calories" %></th>
+      </div>
+      <div class="large-4 medium-4 small-4 columns">  
+        <th>from</th>
+      </div>  
+    </div>  
+    </tr>  
     <!-- <th>Meal</th> --> 
   </thead>
 
   <tbody>
     <% @products.each do |product| %>
     <tr>
-      <td><%= link_to product.name, product %> (<%= product.category %>)</td>
-      <td> 
+    <div class="row">  
+      <div class="large-6 medium-6 small-6 columns">
+        <td><%= link_to product.name, product %> (<%= product.category %>)</td>
+      </div>  
+      <div class="large-4 medium-4 small-4 columns">
+        <td> 
         <% if (product.veg == false) %>
           <%= '' %>
         <% else %>
@@ -83,12 +101,19 @@
           <%= '' %>
         <% else %>
           <%= 'HiProtein ' %>
-        <% end %> </td>
+        <% end %> 
+        </td>
+      </div>  
 <!--  <td><%= product.cal %> </td>-->  
 <!--  <td><%= product.lowCarb %></td> -->
 <!--  <td><%= product.hiProt %></td> -->
-      <td> <%=product.cal%></td>
-      <td> <%= product.locations.first.name %> </td> 
+      <div class="large-2 medium-2 small-2 columns">
+        <td> <%=product.cal%></td>
+      </div>
+      <div class="large-4 medium-4 small-4 columns">
+        <td> <%= product.locations.first.name %> </td> 
+      </div>
+    </div>
     </tr>
     <% end %>
 
